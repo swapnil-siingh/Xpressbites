@@ -1,0 +1,165 @@
+/* Reset default styles */
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+      .search input[type=text]{
+        width:500px;
+        height:35px;
+        border-radius: 10px;
+        border: none;
+    }
+         
+    .search{
+        float:right;
+        margin: 20px;
+    }
+         
+    .search button{
+        background-color: #0074D9;
+        color: #f2f2f2;
+        float: right;
+        padding: 5px 10px;
+        margin-right: 16px;
+        font-size: 300px;
+        border: none;
+        cursor: pointer;
+    }
+  .navul {
+    position: absolute;
+    top: 15px;
+    right:5px;
+    text-align: center;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    height: 1400px;
+    background-color:wheat;
+  }
+  
+  .hero {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .featured h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    float: left;
+    left: 40%;
+    width: 30%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .brands{
+      justify-content: center;
+    align-items: center;
+    }
+   
+    .brands h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .uni
+  {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+    footer {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      margin-bottom: auto;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+    }
+  footer ul{
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+  }
+  .image{
+    float: right;
+  padding: 5px;
+  }
+    

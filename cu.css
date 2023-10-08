@@ -1,0 +1,149 @@
+/* Reset default styles */
+html {
+  min-height: 100%;
+  background-image: url(public/banners/chandigarh.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  header {
+    color: #fff;
+    padding: 20px;
+  }
+  
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: red;
+    }
+  
+  
+  nav ul {
+    list-style: none;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color:black;
+    text-decoration: none;
+  }
+  .navul {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+  }
+  hr{
+    text-align: center;
+  }
+  .dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:lightgreen;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    left: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:lightgoldenrodyellow;
+    width: 20%;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color:lightgoldenrodyellow;}
+  
+  .show {display: block;}
+  main {
+    padding: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+  }
+
+  .grid-item {
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .caption {
+    text-align: left;
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+    
+  }
+ 
+  footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    margin-bottom: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+footer ul{
+  position: absolute;
+  bottom: 17px;
+  right: 16px;
+}
+.image{
+  float: right;
+padding: 5px;
+}

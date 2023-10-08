@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="public/icons/profile.PNG" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="user.css">
+  <title>Profile</title>
+</head>
+<body>
+  <header>
+    <h1>XpressBites</h1>
+    <div class="navul">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="container">
+      <div class="centered">
+        <div class="search">
+          <form action="Menu.html">
+              <input type="text"
+                  placeholder=" Search Your Favourite Food..."
+                  name="search">
+          </form>
+      </div>
+  </div>
+    </div>
+  </header>
+  <main>
+    <div class="profile">
+  <h1 style="padding: 40px;"> Welcome Sakshi,</h1>
+  <img src="public/icons/profile.PNG" alt="profile" style="border-radius: 50%; width: 15%;position: absolute; top: 25%;
+  left: 10px;">
+  </div>
+  <div class="dropdown" style=" width: 70%;">
+    <button onclick="myFunction()" class="dropbtn"><img src="public/icons/menu.png" alt="menu"></button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#">Delivery Orders</a>
+      <a href="#">Pre Orders</a>
+      <a href="#">Favourites</a>
+      <a href="#">Best Sellar</a>
+      <a href="#">Special offer</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    <div class="dashboard-container">
+      <div class="profile-details">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Sakshi Singh" readonly>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="sakshisingh@gmail.com" readonly>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="7876522187" readonly>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="tel" id="address" name="address" value="rudrapur,uttrakhand" readonly>
+          </div>
+          <button type="button">Edit Profile</button>
+        </form>
+      </div>
+    </div>
+  <div class="grid-container">
+    <figure>
+      <img src="public/images/Food/biryani2.png" alt="briyani" style="width:40%">
+      <figcaption><h3>Biryani</h3><ul><p><u>Creative Food's</u></p>
+        <p>Price-80 Rupee</p>
+       <p>Delivery Time-20 min</p></ul>
+      </figcaption>
+      </figure>
+      <figure>
+        <img src="public/images/Food/chole bhatura.png" alt="bhatura" style="width:30%">
+        <figcaption><h3>Chole bhatura</h3><ul><p><u>Crunchy Bites</u></p>
+          <p>Price-60 Rupee</p>
+         <p>Delivery Time-30 min</p></ul>
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="public/images/Food/noodles.png" alt="noodles" style="width:50%">
+          <figcaption><h3>Noodles</h3><ul><p><u>Mummy di Roti</u></p>
+            <p>Price-80 Rupee</p>
+           <p>Delivery Time-30 min</p></ul>
+          </figcaption>
+          </figure>
+          <figure>
+            <img src="public/images/Food/momos.png" alt="momos" style="width:40%">
+            <figcaption><h3>Momos</h3><ul><p><u>Rolls Express</u></p>
+              <p>Price-60 Rupee</p>
+             <p>Delivery Time-25 min</p></ul>
+            </figcaption>
+            </figure>
+            <figure>
+              <img src="public/images/Food/spring rolls.png" alt="spring rolls" style="width:40%">
+              <figcaption><h3>Spring Rolls</h3><ul><p><u>Lord Food</u></p>
+                <p>Price-70 Rupee</p>
+               <p>Delivery Time-20 min</p></ul>
+              </figcaption>
+              </figure>
+              <figure>
+                <img src="public/images/Food/dosa.png" alt="dosa" style="width:40%">
+                <figcaption><h3>Dosa</h3><ul>Mohali Foods<p><u></u></p>
+                  <p>Price-80 Rupee</p>
+                 <p>Delivery Time-20 min</p></ul>
+                </figcaption>
+                </figure>
+    </div>
+    </div>
+    </main>
+</body>
+</html>
